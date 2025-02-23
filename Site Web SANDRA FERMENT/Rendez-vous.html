@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sandra FERMENT - Rendez-vous</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Script src="scripts/script.js" defer></Script>
+    </head>
+
+    <body>
+
+        <main class="content">        
+            <div class="container"><!--Conteneur principal-->
+                
+                <div class="aside_container fixed-left"> <!--Bande vertical gauche-->
+
+                        <p class="left_aside aside_block">CENTRE DE SANTÉ LE VAL, 25 RUE DR PAUL GUILBAULD</p>
+
+                    <div class="aside_block">
+                        <a href="index.html"><img src="assets/logo SF-04.png" alt="Logo" width="80"></a>
+                    </div>
+                </div> <!--Bande vertical gauche-->
+
+                <div class ="container main-box" style="flex-direction: column;"><!--Block titre + description + dispo-->
+                    <header><h1 class="grandTitre">Rendez-vous</h1></header>
+                    <section>
+                        <p>Je vous propose de vous recevoir le <span class="bold">samedi de 9h à 19h sur rendez-vous.</span></p>
+                    </section>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" id="nom" placeholder="NOM">
+                            <input type="text" id="prenom" placeholder="PRÉNOM">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" id="email" placeholder="EMAIL">
+                        </div>
+                        
+                        <div class="input-group">
+                           <select id="choix">
+                            <option value="famille">Thérapie Familliale</option>
+                            <option value="couple">Thérapie Couple</option>
+                           </select>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea id="situation" placeholder="DÉTAILLEZ VOTRE SITUATION"></textarea>
+                        </div>
+                        <input type="submit" value="Envoyer" class="btn">
+                    </form>
+
+                </div><!--Block titre + description + dispo-->
+
+                
+                
+            </div><!--Conteneur principal-->
+
+        </main>
+
+        <nav id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close"><img src="assets/close-circle-outline.svg" alt="fermer" width="50px"></a>
+                <ul>
+                    <li></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="A-Propos.html">À propos</a></li>
+                    <li class="current"><a href="Rendez-vous.html">Rendez-vous</a></li>
+                    <li><a href="Contact.html">Contactez-moi</a></li>
+                </ul>
+            </a>
+        </nav>
+        <div class="fixed-right">
+            <a href="#" id="openBtn" >
+                <img src="assets/menu.svg" alt="Menu Burger" width="40%" class="burgerButton">
+            </a>
+        </div>
+
+    <footer class="content">
+        <div class="container bold">
+            <div class="block" style="flex-direction: column;">
+                <p>CENTRE DE SANTÉ LE VAL, 25 RUE DR PAUL GUILBAULD
+                    CONCHES-EN-OUCHE, 27190, FRANCE</p>
+                <p>07.67.52.60.56</p>
+            </div>
+            <div class="block">
+                <p class="container" style="flex-direction: column;">
+                    <a href="#">Mention légales et politique de confidentialité</a>
+                    <a href="Contact.html">Contacts</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
