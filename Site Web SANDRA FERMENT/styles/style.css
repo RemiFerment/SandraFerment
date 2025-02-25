@@ -94,6 +94,7 @@ main{
     border: 2px solid #E2A38B;
 }
 /*=============================*/
+
 .content{
     flex:1;
     padding-top: 10px;
@@ -337,12 +338,25 @@ select:focus{
     justify-content: center;
     padding-block: 20px;
 }
-.input-group .btn{
+form .btn{
     display:block;
-    width: 50px;
+    width: 20%;
+    border-radius: 0;
+    background-color: #226B9A;
+    color: #E2A38B;
+    text-transform: uppercase;
 }
 .input-group textarea{
     min-height: 100px;
+}
+.rendez-vous, .rendez-vous p{
+    padding: 0;
+    margin: 0;
+    color: #E2A38B;
+    font-size: 1.5rem;
+}
+.rendez-vous p{
+    margin-bottom: 20px;
 }
 
 

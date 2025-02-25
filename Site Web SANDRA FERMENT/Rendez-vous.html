@@ -4,6 +4,7 @@
         <title>Sandra FERMENT - Rendez-vous</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="assets/logo SF-03.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <Script src="scripts/script.js" defer></Script>
     </head>
@@ -24,7 +25,7 @@
 
                 <div class ="container main-box" style="flex-direction: column;"><!--Block titre + description + dispo-->
                     <header><h1 class="grandTitre">Rendez-vous</h1></header>
-                    <section>
+                    <section class="rendez-vous">
                         <p>Je vous propose de vous recevoir le <span class="bold">samedi de 9h à 19h sur rendez-vous.</span></p>
                     </section>
                     <form action="https://sandraferment.alwaysdata.net/traitement.php" method="POST">
@@ -40,13 +41,17 @@
                         <div class="input-group">
                            <select name="option" required>
                             <option value="therapie familiale">Thérapie Familiale</option>
-                            <option value="therapie de couple">Thérapie Couple</option>
+                            <option value="therapie de couple">Thérapie de Couple</option>
                            </select>
                         </div>
 
                         <div class="input-group">
                             <textarea name="message" placeholder="DÉTAILLEZ VOTRE SITUATION" required></textarea>
                         </div>
+                        <section class="rendez-vous">
+                            <p>Tarifs : 50 euros la séance individuelle ou de couple : durée environ 1h/1h30 <br>
+                                Tarifs : 60 euros la séance familiale : durée environ 1h/1h30</p>
+                        </section>
                         <input type="submit" value="Envoyer" class="btn">
                     </form>
 
