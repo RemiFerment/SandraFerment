@@ -27,25 +27,25 @@
                     <section>
                         <p>Je vous propose de vous recevoir le <span class="bold">samedi de 9h à 19h sur rendez-vous.</span></p>
                     </section>
-                    <form>
+                    <form action="https://sandraferment.alwaysdata.net/traitement.php" method="POST">
                         <div class="input-group">
-                            <input type="text" id="nom" placeholder="NOM">
-                            <input type="text" id="prenom" placeholder="PRÉNOM">
+                            <input type="text" name="nom" placeholder="NOM" required>
+                            <input type="text" name="prenom" placeholder="PRÉNOM" required>
                         </div>
 
                         <div class="input-group">
-                            <input type="email" id="email" placeholder="EMAIL">
+                            <input type="email" name="email" placeholder="EMAIL" required>
                         </div>
                         
                         <div class="input-group">
-                           <select id="choix">
-                            <option value="famille">Thérapie Familliale</option>
-                            <option value="couple">Thérapie Couple</option>
+                           <select name="option" required>
+                            <option value="therapie familiale">Thérapie Familiale</option>
+                            <option value="therapie de couple">Thérapie Couple</option>
                            </select>
                         </div>
 
                         <div class="input-group">
-                            <textarea id="situation" placeholder="DÉTAILLEZ VOTRE SITUATION"></textarea>
+                            <textarea name="message" placeholder="DÉTAILLEZ VOTRE SITUATION" required></textarea>
                         </div>
                         <input type="submit" value="Envoyer" class="btn">
                     </form>
