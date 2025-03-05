@@ -15,7 +15,9 @@ body{
 main{
     overflow:auto;
 }
-
+h1,h2,h3{
+    color: #E2A38B;
+}
 
 /*Menu Burger*/
 .burgerButton{
@@ -366,7 +368,15 @@ form .btn{
 .rendez-vous p{
     margin-bottom: 20px;
 }
-
+.linkML{
+    color: white;
+}
+.linkML:hover{
+    color: #E2A38B;
+}
+.linkML:active{
+    color: #dfcfc9;
+}
 
 
 @media (max-width: 1170px) {
