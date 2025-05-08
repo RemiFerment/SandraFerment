@@ -1,46 +1,54 @@
-$bg-color:#226B9A;
-$primary-color:#E2A38B;
-$secondary-color:#e0c4b8;
+$bg-color: #226B9A;
+$primary-color: #E2A38B;
+$secondary-color: #e0c4b8;
 $tertiary-color: $bg-color;
 
-@mixin reset-layout{
+@mixin reset-layout {
     padding: 0;
     margin: 0;
 }
 
-html,body{
+html,
+body {
     font-size: 62.5%;
     @include reset-layout();
     height: 100%;
 }
-body{
+
+body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-color:$bg-color;
-    color:$primary-color;
+    background-color: $bg-color;
+    color: $primary-color;
     font-family: Arial, Helvetica, sans-serif;
 }
-main{
-    overflow:auto;
+
+main {
+    overflow: auto;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     color: $primary-color;
 }
 
 /*Menu Burger*/
-.burgerButton{
+.burgerButton {
     transition: 100ms ease;
     border-radius: 20px;
     border: 3px solid transparent;
     box-sizing: content-box;
 }
-.burgerButton:hover{
+
+.burgerButton:hover {
     border-radius: 20px;
     border: 3px solid $primary-color;
     box-shadow: 0px 0px 20px $secondary-color;
 }
-.sidenav{
+
+.sidenav {
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     height: 100%;
@@ -51,10 +59,12 @@ h1,h2,h3{
     right: -500px;
     padding-top: 60px;
     background-color: $bg-color;
+    border-left: 1px solid #133c57;
     box-sizing: border-box;
     transition: right 0.5s ease;
 }
-.sidenav a{
+
+.sidenav a {
     padding: 24px 8px 24px 16px;
     text-decoration: none;
     font-size: 2.2rem;
@@ -62,32 +72,35 @@ h1,h2,h3{
     display: block;
     transition: 0.3s;
 }
-.sidenav a:hover{
+
+.sidenav a:hover {
     color: $primary-color;
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.sidenav ul{
+.sidenav ul {
     list-style-type: none;
     padding: 10px;
     margin: 0;
     margin-top: 100px;
 }
 
-.sidenav ul li{
-    border-bottom:1px solid rgba(255, 255, 255, 0.25);
+.sidenav ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
-.sidenav.active{
+
+.sidenav.active {
     right: 0;
 }
-.current a{
-    color:$primary-color;
+
+.current a {
+    color: $primary-color;
     pointer-events: none;
     list-style-type: disc;
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.sidenav .close{
+.sidenav .close {
     position: absolute;
     top: 25px;
     width: 50px;
@@ -98,19 +111,22 @@ h1,h2,h3{
     border-radius: 50px;
     border: 2px solid transparent;
 }
-.sidenav .close:hover{
+
+.sidenav .close:hover {
     background-color: $bg-color;
     box-shadow: 0px 0px 20px 5px $secondary-color;
     border-radius: 50px;
     border: 2px solid $primary-color;
 }
+
 /*=============================*/
 
-.content{
-    flex:1;
+.content {
+    flex: 1;
     padding-top: 10px;
 }
-.container{
+
+.container {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -118,17 +134,17 @@ h1,h2,h3{
 }
 
 
-.aside_container{
-    display:inline-flex;
+.aside_container {
+    display: inline-flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     justify-content: center;
     text-align: center;
-    gap:10vw;
+    gap: 10vw;
 }
 
-.titre-principal{
+.titre-principal {
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -136,64 +152,70 @@ h1,h2,h3{
     align-self: center;
 }
 
-.block{
+.block {
     padding: 20px;
     text-align: center;
     justify-content: center;
 }
 
-.blockBox{
+.blockBox {
     min-width: 50%;
 }
 
-.columnBlock{
+.columnBlock {
     flex-direction: column;
 }
 
-.block span{
+.block span {
     display: contents;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
 /*LobbyPage*/
 
-.nom{
+.nom {
     @include reset-layout();
     text-align: right;
 }
-.prenom{
+
+.prenom {
     text-align: left;
 }
-.nom,.prenom, .grandTitre{
-    font-family:'Times New Roman', Times, serif;
+
+.nom,
+.prenom,
+.grandTitre {
+    font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
     margin: 0;
     font-size: 9rem;
     text-transform: uppercase;
 }
 
-.grandTitre{
+.grandTitre {
     text-align: center;
     justify-content: center;
 }
-.grandTitre h2{
+
+.grandTitre h2 {
     font-size: 4rem;
 }
-.main-box{
+
+.main-box {
     width: 30%;
     box-sizing: content-box;
 }
 
-.main_content{
+.main_content {
     text-align: justify;
     word-spacing: 0.5px;
     box-sizing: border-box;
 }
 
-.profession{
+.profession {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
     color: white;
@@ -202,12 +224,13 @@ h1,h2,h3{
     font-weight: bold;
     text-transform: uppercase;
 }
-.titre{
-    font-family:'Times New Roman', Times, serif;
+
+.titre {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 5rem;
 }
 
-.left_aside{
+.left_aside {
     writing-mode: sideways-lr;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -215,23 +238,26 @@ h1,h2,h3{
     padding: 0;
     margin: 0;
 }
-.fixed-right{
+
+.fixed-right {
     position: absolute;
     right: 100px;
     padding: 10px;
     width: 150px;
     text-align: center;
 }
-.fixed-left{
+
+.fixed-left {
     position: absolute;
     left: 100px;
     padding: 10px;
     text-align: center;
 }
-.btn{
-    color:#226B9A;
+
+.btn {
+    color: #226B9A;
     font-size: 2rem;
-    background-color:$primary-color;
+    background-color: $primary-color;
     border-radius: 10px;
     padding: 10px;
     font-weight: bold;
@@ -239,41 +265,46 @@ h1,h2,h3{
     box-shadow: 0px 0px 0px white;
     transition: 200ms ease;
 }
-.btn:hover{
+
+.btn:hover {
     box-shadow: 0px 0px 20px $secondary-color;
 }
-section,aside{
+
+section,
+aside {
     font-size: 2rem;
     color: white;
 }
-.dispo_box{
+
+.dispo_box {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: bold;
     padding: 30px;
-    border : 2px solid $primary-color;
+    border: 2px solid $primary-color;
     border-radius: 20px;
     box-sizing: content-box;
     white-space: nowrap;
 }
 
-.contact_collumn{
+.contact_collumn {
     padding-bottom: 200px;
 }
 
-.contact-box{
+.contact-box {
     flex-direction: column;
     align-self: center;
     font-weight: bold;
-    border : 2px dashed $primary-color;
+    border: 2px dashed $primary-color;
     border-radius: 20px;
     box-sizing: border-box;
     white-space: wrap;
     min-width: 300px;
     max-width: 500px;
 }
-.back-button{
+
+.back-button {
     position: absolute;
     left: 250px;
     padding: 10px;
@@ -282,36 +313,42 @@ section,aside{
 
 /*===Footer===*/
 
-footer{
-    color :#226B9A;
-    font-size: 1.6rem; 
+footer {
+    color: #226B9A;
+    font-size: 1.6rem;
     margin-top: auto;
-    max-height:fit-content;
+    max-height: fit-content;
 }
-footer .container{
+
+footer .container {
     background-color: $primary-color;
     column-gap: 100px;
     padding-block: 0;
 }
-footer a{
+
+footer a {
     text-decoration: none;
-    color :#226B9A
+    color: #226B9A
 }
-footer p{
+
+footer p {
     margin: 0;
 }
-footer a:hover{
-    text-decoration: underline;
-}
-.lien a{
-    text-decoration: none;
-    color: $primary-color;
-}
-.lien a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }
 
-.grand-logo{
+.lien a {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.lien a:hover {
+    text-decoration: underline;
+}
+
+.grand-logo {
     padding: 0;
     text-align: center;
     justify-content: center;
@@ -321,7 +358,9 @@ footer a:hover{
 
 /*===Form===*/
 
-input,textarea,select{
+input,
+textarea,
+select {
     background-color: #ffffff00;
     font-size: 2rem;
     padding: 20px;
@@ -329,24 +368,31 @@ input,textarea,select{
     color: white;
     width: 100%;
 }
-input:placeholder-shown{
+
+input:placeholder-shown {
     text-transform: uppercase;
 }
-input:focus,textarea:focus,select:focus{
+
+input:focus,
+textarea:focus,
+select:focus {
     outline: 1px solid $primary-color;
 }
-select:focus{
+
+select:focus {
     color: $primary-color;
     font-weight: bold;
     background-color: #ffffff00;
 }
-::placeholder{
+
+::placeholder {
     position: absolute;
     color: $primary-color;
     font-size: 2rem;
     left: 20px;
     top: 5px;
 }
+
 .input-group {
     display: flex;
     align-content: stretch;
@@ -355,8 +401,9 @@ select:focus{
     justify-content: center;
     padding-block: 20px;
 }
-form .btn{
-    display:block;
+
+form .btn {
+    display: block;
     width: 20%;
     min-width: 150px;
     border-radius: 0;
@@ -364,24 +411,31 @@ form .btn{
     color: $primary-color;
     text-transform: uppercase;
 }
-.input-group textarea{
+
+.input-group textarea {
     min-height: 100px;
 }
-.rendez-vous, .rendez-vous p{
+
+.rendez-vous,
+.rendez-vous p {
     @include reset-layout();
     color: $primary-color;
     font-size: 1.5rem;
 }
-.rendez-vous p{
+
+.rendez-vous p {
     margin-bottom: 20px;
 }
-.linkML{
+
+.linkML {
     color: white;
 }
-.linkML:hover{
+
+.linkML:hover {
     color: $primary-color;
 }
-.linkML:active{
+
+.linkML:active {
     color: #dfcfc9;
 }
 
@@ -390,44 +444,63 @@ form .btn{
     .grand-logo {
         display: none;
     }
-    .aside_container{
+
+    .aside_container {
         display: none;
     }
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0;
     }
-    .titre-principal{
+
+    .titre-principal {
         padding-top: 50px;
     }
-    .nom{
+
+    .nom {
         text-align: center;
         font-size: 5rem;
     }
-    .prenom{
+
+    .prenom {
         text-align: center;
         font-size: 5rem;
     }
-    .grandTitre{
+
+    .grandTitre {
         font-size: 5rem;
         text-align: center;
     }
-    .fixed-right{
+
+    .fixed-right {
         position: fixed;
         right: -30px;
         top: 0;
         padding: 0;
     }
-    footer{
+
+    footer {
         display: none;
     }
-    .sidenav{
+
+    .sidenav {
         width: 100%;
         right: -100%;
     }
-    .main-box{
+
+    .main-box {
         min-width: 70%;
+    }
+
+    .only-mobile {
+        display: flex;
+        place-self: center;
+    }
+
+    .only-laptop {
+        display: none;
     }
 }

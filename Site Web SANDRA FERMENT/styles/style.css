@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
@@ -18,8 +19,14 @@ main {
   overflow: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #E2A38B;
+}
+
+.only-mobile {
+  display: none;
 }
 
 /*Menu Burger*/
@@ -47,6 +54,7 @@ h1, h2, h3 {
   right: -500px;
   padding-top: 60px;
   background-color: #226B9A;
+  border-left: 1px solid #133c57;
   box-sizing: border-box;
   transition: right 0.5s ease;
 }
@@ -170,7 +178,9 @@ h1, h2, h3 {
   text-align: left;
 }
 
-.nom, .prenom, .grandTitre {
+.nom,
+.prenom,
+.grandTitre {
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
   margin: 0;
@@ -253,7 +263,8 @@ h1, h2, h3 {
   box-shadow: 0px 0px 20px #e0c4b8;
 }
 
-section, aside {
+section,
+aside {
   font-size: 2rem;
   color: white;
 }
@@ -305,7 +316,7 @@ footer {
 footer .container {
   background-color: #E2A38B;
   -moz-column-gap: 100px;
-       column-gap: 100px;
+  column-gap: 100px;
   padding-block: 0;
 }
 
@@ -340,7 +351,9 @@ footer a:hover {
 }
 
 /*===Form===*/
-input, textarea, select {
+input,
+textarea,
+select {
   background-color: rgba(255, 255, 255, 0);
   font-size: 2rem;
   padding: 20px;
@@ -357,7 +370,9 @@ input:placeholder-shown {
   text-transform: uppercase;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: 1px solid #E2A38B;
 }
 
@@ -406,7 +421,8 @@ form .btn {
   min-height: 100px;
 }
 
-.rendez-vous, .rendez-vous p {
+.rendez-vous,
+.rendez-vous p {
   padding: 0;
   margin: 0;
   color: #E2A38B;
@@ -433,44 +449,65 @@ form .btn {
   .grand-logo {
     display: none;
   }
+
   .aside_container {
     display: none;
   }
+
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
   }
+
   .titre-principal {
     padding-top: 50px;
   }
+
   .nom {
     text-align: center;
     font-size: 5rem;
   }
+
   .prenom {
     text-align: center;
     font-size: 5rem;
   }
+
   .grandTitre {
     font-size: 5rem;
     text-align: center;
   }
+
   .fixed-right {
     position: fixed;
     right: -30px;
     top: 0;
     padding: 0;
   }
+
   footer {
     display: none;
   }
+
   .sidenav {
     width: 100%;
     right: -100%;
   }
+
   .main-box {
     min-width: 70%;
   }
-}/*# sourceMappingURL=style.css.map */
+
+  .only-mobile {
+    display: flex;
+    place-self: center;
+  }
+
+  .only-laptop {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
